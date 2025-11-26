@@ -3,85 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Automatización de portones, herrería profesional y reparaciones urgentes en CABA y GBA. Atención 24/7 y garantía total.">
-  <meta name="google-site-verification" content="AQUI_VA_TU_MAIN_DE_GOOGLE" />
-  <title>ESGR • Automatización y Herrería Profesional</title>
+  <meta name="description" content="Automatización de portones, reparación urgente, soldadura y herrería profesional en Lugano y Buenos Aires. Atención inmediata 24/7.">
+  <meta name="keywords" content="automatización de portones, reparación de portones, herrería, soldadura, urgencias 24 horas, portones eléctricos, Lugano, Buenos Aires, mantenimiento de portones, instalación de portones automáticos">
+  <meta name="author" content="ESGR Herrería y Portones">
+  <meta name="robots" content="index, follow">
+  <meta name="geo.region" content="AR-B">
+  <meta name="geo.placename" content="Lugano, Buenos Aires">
+  <meta name="geo.position" content="-34.679,-58.484">
+  <meta name="ICBM" content="-34.679, -58.484">
+  <meta name="google-site-verification" content="h8ERAnLd1_rnMqJ6-2ageCOZNI8zqAXW-7iZGl2atE0" />
+  <title>ESGR - Automatización de Portones y Herrería Profesional</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
-    body { margin:0; font-family:Arial, sans-serif; background:#0d1726; color:#fff; }
-    header { display:flex; justify-content:space-between; align-items:center; padding:20px; }
-    header .info p { margin:0; font-size:14px; }
-    .hero { display:flex; justify-content:space-between; padding:60px 20px; max-width:1200px; margin:auto; }
-    .hero-text { max-width:50%; }
-    .hero-text h1 { font-size:34px; font-weight:700; line-height:1.3; }
-    .hero-text p { margin-top:10px; font-size:16px; color:#cfd8e3; }
-    .hero-buttons { margin-top:20px; display:flex; gap:15px; }
-    .btn { padding:12px 22px; border-radius:8px; text-decoration:none; color:#fff; font-weight:bold; }
-    .call { background:#2563eb; }
-    .wa { background:#16a34a; }
-    .hero-img img { width:500px; height:300px; object-fit:cover; border-radius:14px; box-shadow:0 4px 15px rgba(0,0,0,0.4); }
-    nav { background:#0a1120; padding:12px 0; text-align:center; }
-    nav a { margin:0 20px; color:#fff; text-decoration:none; font-size:15px; }
-    .servicios { background:#fff; color:#000; padding:40px; max-width:1200px; margin:40px auto; border-radius:14px; }
-    .servicios h2 { font-size:24px; margin-bottom:25px; }
-    .serv-grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:20px; }
-    .card { background:#f8f9fc; padding:20px; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,0.1); }
-    .galeria { max-width:1200px; margin:40px auto; padding:20px; }
-    .galeria h2 { font-size:24px; margin-bottom:25px; text-align:center; }
-    .galeria-grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:20px; }
-    .galeria-grid img { width:100%; height:250px; object-fit:cover; border-radius:12px; box-shadow:0 3px 12px rgba(0,0,0,0.5); }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #0d1727; color: #fff; }
+    header { padding: 2rem 1rem; display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: auto; }
+
+    .logo-area { display: flex; align-items: center; gap: 1rem; }
+    .logo-area img { width: 70px; height: 70px; object-fit: cover; border-radius: 10px; }
+    .contact-info { font-size: 0.9rem; line-height: 1.4; }
+
+    .hero { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+    .hero h1 { font-size: 2rem; margin-bottom: 1rem; }
+    .hero-buttons { display: flex; gap: 1rem; margin-top: 1.5rem; }
+    .hero-buttons a { background: #2563eb; color: white; padding: 0.8rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: bold; }
+    .hero-buttons a.whatsapp { background: #25d366; }
+
+    .hero img { width: 100%; height: 280px; object-fit: cover; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+
+    nav { background: #0a1220; padding: 0.7rem; text-align: center; position: sticky; top: 0; z-index: 100; }
+    nav a { color: white; margin: 0 1rem; text-decoration: none; font-size: 1rem; }
+
+    .section { background: #fff; color: #000; border-radius: 12px; padding: 2rem; max-width: 1200px; margin: 2rem auto; }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+    .service-card { background: #f5f7fa; padding: 1.2rem; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+
+    footer { text-align: center; padding: 1.5rem 0; background: #0a1220; margin-top: 2rem; color: #aaa; }
+
+    .map { border-radius: 12px; width: 100%; height: 300px; }
+
+    .whatsapp-button { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.4); text-decoration: none; }
+
+    @media(max-width: 768px){ .hero { grid-template-columns: 1fr; } header { flex-direction: column; text-align: center; } }
   </style>
 </head>
 <body>
 
 <header>
-  <div class="info">
-    <p><strong>ESGR • Automatización y Herrería Profesional</strong></p>
-    <p>Urgencias 24/7: <strong>11 3435 2754</strong></p>
-    <p>Email: contacto@esgrportones.com.ar</p>
+  <div class="logo-area">
+    <div class="contact-info">
+      <strong>ESGR • Automatización y Herrería Profesional</strong><br>
+      Urgencias 24/7: 11 3435 2754<br>
+      Email: contacto@esgrportones.com.ar
+    </div>
   </div>
 </header>
 
 <section class="hero">
-  <div class="hero-text">
-    <div style="background:#22c55e; display:inline-block; padding:6px 12px; border-radius:6px; font-size:14px; font-weight:bold;">+20 años • Atención inmediata</div>
+  <div>
+    <span style="background:#22c55e;padding:0.3rem 0.8rem;border-radius:8px;font-weight:bold;">+20 años • Atención inmediata</span>
     <h1>Automatización de portones, reparaciones urgentes y herrería profesional</h1>
     <p>Instalación, mantenimiento, soldadura y optimización de sistemas automáticos. Presupuestos sin cargo y garantía total.</p>
+
     <div class="hero-buttons">
-      <a class="btn call" href="tel:1134352754">Llamar ahora</a>
-      <a class="btn wa" href="https://wa.me/1134352754" target="_blank">WhatsApp</a>
+      <a href="tel:1134352754">Llamar ahora</a>
+      <a class="whatsapp" href="https://wa.me/541134352754" target="_blank">WhatsApp</a>
     </div>
   </div>
-  <div class="hero-img">
-    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Portón automático instalado" />
-  </div>
+
+  <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900" alt="Portón automatizado por ESGR">
 </section>
 
 <nav>
   <a href="#servicios">Servicios</a>
-  <a href="#galeria">Galería</a>
+  <a href="#ubicacion">Ubicación</a>
   <a href="#contacto">Contacto</a>
 </nav>
 
-<section id="servicios" class="servicios">
+<section id="servicios" class="section">
   <h2>Servicios Profesionales</h2>
-  <div class="serv-grid">
-    <div class="card"><h3>Automatización completa</h3><p>Instalación de motores, controles y sistemas corredizos o levadizos.</p></div>
-    <div class="card"><h3>Reparación urgente 24/7</h3><p>Soluciones inmediatas para portones trabados o dañados.</p></div>
-    <div class="card"><h3>Mantenimiento preventivo</h3><p>Prolonga la vida útil del sistema y evita roturas.</p></div>
-    <div class="card"><h3>Soldadura y refuerzos</h3><p>Reparaciones metálicas y trabajos estructurales.</p></div>
-    <div class="card"><h3>Fabricación a medida</h3><p>Portones, rejas y estructuras personalizadas.</p></div>
-    <div class="card"><h3>Modernización</h3><p>Actualización de sistemas por tecnología moderna.</p></div>
+  <div class="services-grid">
+    <div class="service-card"><strong>Automatización completa</strong><br> Instalación de motores, controles y sistemas corredizos y levadizos.</div>
+    <div class="service-card"><strong>Reparación urgente 24/7</strong><br> Soluciones inmediatas para portones trabados o dañados.</div>
+    <div class="service-card"><strong>Mantenimiento preventivo</strong><br> Evita roturas y prolonga la vida del sistema.</div>
+    <div class="service-card"><strong>Soldadura y refuerzos</strong><br> Trabajos estructurales y reparaciones metálicas.</div>
+    <div class="service-card"><strong>Fabricación a medida</strong><br> Portones, rejas y estructuras personalizadas.</div>
+    <div class="service-card"><strong>Modernización</strong><br> Actualización de sistemas antiguos por tecnología moderna.</div>
   </div>
 </section>
 
-<section id="galeria" class="galeria">
-  <h2>Galería de Portones Automáticos</h2>
-  <div class="galeria-grid">
-    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Portón automático moderno" />
-    <img src="https://images.unsplash.com/photo-1615870216519-2f9fa1286990" alt="Instalación de portón automatizado" />
-    <img src="https://images.unsplash.com/photo-1597004899357-7c04d2e2e3aa" alt="Portón corredizo profesional" />
-  </div>
+<section id="ubicacion" class="section">
+  <h2>Ubicación</h2>
+  <p>Lugano, Ciudad Autónoma de Buenos Aires. Servicio en CABA y GBA.</p>
+  <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.883597480573!2d-58.486!3d-34.679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb0d28943e6f%3A0xdea2b497bb7d1cf!2sVilla%20Lugano!5e0!3m2!1ses-419!2sar!4v1668027770000!5m2!1ses-419!2sar"></iframe>
 </section>
+
+<section id="contacto" class="section">
+  <h2>Contacto</h2>
+  <p><strong>Teléfono:</strong> 11 3435 2754 / 11 2471 1043</p>
+  <p><strong>Email:</strong> contacto@esgrportones.com.ar</p>
+  <p><strong>Horario:</strong> Atención 24 horas, todos los días</p>
+</section>
+
+<footer>
+  © 2025 ESGR - Todos los derechos reservados
+</footer>
+
+<a class="whatsapp-button" href="https://wa.me/541134352754" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
 
 </body>
 </html>
