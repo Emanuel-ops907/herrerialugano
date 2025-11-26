@@ -1,424 +1,117 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>ESGR • Automatización de Portones, Herrería Profesional y Urgencias 24/7</title>
-  <meta name="description" content="ESGR: automatización de portones, reparación urgente 24/7, herrería profesional y mantenimiento integral en Lugano y toda CABA. +20 años de experiencia, garantía y atención inmediata." />
-  <meta name="keywords" content="automatización de portones, reparación de portones Buenos Aires, herrería profesional, portones automáticos CABA, urgencias herrería 24 horas, portones corredizos, portones levadizos, mantenimiento de portones, soldadura profesional, instalación de motores de portones, portones automáticos Lugano" />
-  <meta name="author" content="ESGR Herrería y Portones" />
-  <meta name="robots" content="index, follow" />
-
-  <meta name="geo.region" content="AR-B" />
-  <meta name="geo.placename" content="Lugano, Buenos Aires" />
-  <meta name="geo.position" content="-34.679;-58.484" />
-  <meta name="ICBM" content="-34.679, -58.484" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Automatización de portones, reparación urgente, soldadura y herrería profesional en Lugano y Buenos Aires. Atención inmediata 24/7.">
+  <meta name="keywords" content="automatización de portones, reparación de portones, herrería, soldadura, urgencias 24 horas, portones eléctricos, Lugano, Buenos Aires, mantenimiento de portones, instalación de portones automáticos">
+  <meta name="author" content="ESGR Herrería y Portones">
+  <meta name="robots" content="index, follow">
+  <meta name="geo.region" content="AR-B">
+  <meta name="geo.placename" content="Lugano, Buenos Aires">
+  <meta name="geo.position" content="-34.679,-58.484">
+  <meta name="ICBM" content="-34.679, -58.484">
   <meta name="google-site-verification" content="h8ERAnLd1_rnMqJ6-2ageCOZNI8zqAXW-7iZGl2atE0" />
-
-  <!-- Open Graph / Social -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="ESGR • Automatización de Portones y Herrería Profesional" />
-  <meta property="og:description" content="Automatización, reparación urgente 24/7 y herrería profesional en Lugano y CABA. Más de 20 años de experiencia. Servicio garantizado." />
-  <meta property="og:url" content="https://esgrportones.com.ar/" />
-  <meta property="og:site_name" content="ESGR" />
-  <meta property="og:image" content="https://esgrportones.com.ar/img/og-porton.jpg" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="ESGR • Automatización de Portones" />
-  <meta name="twitter:description" content="Servicio de automatización, reparación y urgencias 24/7 en Lugano y CABA. Profesionalismo y garantía." />
-  <meta name="twitter:image" content="https://esgrportones.com.ar/img/og-porton.jpg" />
-
-  <!-- Structured Data (LocalBusiness + FAQ) -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"LocalBusiness",
-    "name":"ESGR Herrería y Portones",
-    "image":["https://esgrportones.com.ar/img/porton-1.jpg","https://esgrportones.com.ar/img/porton-2.jpg"],
-    "@id":"",
-    "url":"https://esgrportones.com.ar/",
-    "telephone":"+54 11 3435 2754",
-    "email":"contacto@esgrportones.com.ar",
-    "address":{
-      "@type":"PostalAddress",
-      "streetAddress":"Lugano",
-      "addressLocality":"Ciudad Autónoma de Buenos Aires",
-      "addressRegion":"Buenos Aires",
-      "postalCode":"",
-      "addressCountry":"AR"
-    },
-    "geo":{
-      "@type":"GeoCoordinates",
-      "latitude":-34.679,
-      "longitude":-58.484
-    },
-    "openingHours":"Mo-Su 00:00-23:59",
-    "priceRange":"$$",
-    "sameAs":[
-      "https://www.facebook.com/esgrportones",
-      "https://www.instagram.com/esgrportones"
-    ]
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity":[
-      {
-        "@type":"Question",
-        "name":"¿Atienden urgencias las 24 horas?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"Sí. Brindamos servicio de urgencias 24/7 para reparaciones y fallas en portones automáticos y manuales."
-        }
-      },
-      {
-        "@type":"Question",
-        "name":"¿Realizan presupuestos en el momento?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"Sí. Ofrecemos presupuestos sin cargo en la mayoría de los casos y asesoramiento técnico inmediato."
-        }
-      },
-      {
-        "@type":"Question",
-        "name":"¿Cubren toda CABA y alrededores?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"Sí. Cubrimos Lugano, Pompeya, Mataderos y gran parte de CABA y GBA. Consultar tiempos de atención según ubicación."
-        }
-      }
-    ]
-  }
-  </script>
-
+  <title>ESGR - Automatización de Portones y Herrería Profesional</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
-    :root{
-      --bg:#f7f8fa;
-      --surface:#ffffff;
-      --muted:#6b7280;
-      --accent:#1f6feb;
-      --accent-2:#0ea5a4;
-      --radius:12px;
-      --shadow:0 6px 24px rgba(16,24,40,0.08);
-      --max-width:1200px;
-      color-scheme: light;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0;font-family:Inter, "Segoe UI", Roboto, Arial, sans-serif;background:var(--bg);color:#0f1724}
-    a{color:inherit}
-    header{background:linear-gradient(90deg,#0b1226 0%, #14243b 100%);color:white;padding:48px 16px 36px}
-    .wrap{max-width:var(--max-width);margin:0 auto;padding:0 20px}
-    .brand{display:flex;align-items:center;gap:14px}
-    .brand img{width:68px;height:68px;border-radius:10px;object-fit:cover;box-shadow:0 6px 18px rgba(2,6,23,0.4)}
-    .brand h1{font-size:1.6rem;margin:0;font-weight:700;letter-spacing:0.2px}
-    .hero{display:flex;align-items:center;gap:28px;flex-wrap:wrap;margin-top:18px}
-    .hero-left{flex:1;min-width:280px}
-    .badge{background:#0ea5a4;padding:6px 10px;border-radius:999px;color:white;font-weight:700;display:inline-block;margin-bottom:12px;font-size:13px}
-    .hero-title{font-size:2.1rem;margin:0 0 12px;color:#fff;line-height:1.05}
-    .hero-sub{color:#d1dde9;margin:0 0 20px}
-    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
-    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:10px;font-weight:700;text-decoration:none;border:none;cursor:pointer}
-    .btn-primary{background:var(--accent);color:white;box-shadow:0 8px 22px rgba(31,111,235,0.18)}
-    .btn-ghost{background:transparent;color:white;border:1px solid rgba(255,255,255,0.12)}
-    .meta-contact{display:flex;gap:18px;align-items:center;margin-top:8px;color:#d9e6ff;font-weight:600}
-    .meta-contact small{display:block;color:#bcd2ff;font-weight:500}
-    .hero-media{flex:0 0 420px;min-width:260px;border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
-    .hero-media img{width:100%;height:100%;display:block;object-fit:cover;aspect-ratio:16/10}
-    nav{position:sticky;top:0;z-index:120;background:rgba(255,255,255,0.02);backdrop-filter: blur(6px);margin-top:18px}
-    .nav-inner{display:flex;gap:16px;align-items:center;justify-content:center;padding:10px 0}
-    .nav-inner a{padding:8px 14px;border-radius:9px;color:#e6eefc;text-decoration:none;font-weight:600}
-    .nav-inner a:hover{background:rgba(255,255,255,0.04)}
-    main{max-width:var(--max-width);margin:26px auto;padding:0 20px 60px}
-    .card{background:var(--surface);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);margin-bottom:20px;border:1px solid rgba(15,23,36,0.03)}
-    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
-    .col-8{grid-column:span 8}
-    .col-4{grid-column:span 4}
-    h2{font-size:1.3rem;margin:0 0 12px;color:#0f1724}
-    p.lead{color:var(--muted);margin:0 0 12px}
-    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px}
-    .service{background:linear-gradient(180deg,#fff,#fbfdff);padding:14px;border-radius:12px;border:1px solid rgba(10,12,16,0.03);display:flex;gap:12px;align-items:flex-start}
-    .service i{font-size:20px;color:var(--accent-2);min-width:30px}
-    .service h3{margin:0;font-size:15px}
-    .service p{margin:6px 0 0;color:var(--muted);font-size:13px}
-    /* Contact card */
-    .contact-card{display:flex;flex-direction:column;gap:12px}
-    .contact-row{display:flex;gap:12px;align-items:center}
-    .contact-row i{font-size:20px;color:var(--accent)}
-    .small{font-size:13px;color:var(--muted)}
-    /* Form */
-    form{display:grid;gap:10px}
-    input[type="text"],input[type="email"],textarea,select{padding:12px;border-radius:10px;border:1px solid #e6eef6;font-size:14px;outline:none}
-    textarea{min-height:120px;resize:vertical}
-    .form-row{display:flex;gap:10px}
-    .form-row > *{flex:1}
-    .map{width:100%;height:260px;border-radius:12px;overflow:hidden;border:1px solid rgba(10,12,16,0.04)}
-    .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
-    .tag{background:#f1f5f9;padding:6px 10px;border-radius:999px;font-weight:600;color:#0f1724;border:1px solid rgba(15,23,36,0.03)}
-    footer{background:#071028;color:#9fb3d8;padding:26px 20px;text-align:center;border-top:1px solid rgba(255,255,255,0.02)}
-    .legal{font-size:13px;color:#cfe6ff;margin-top:8px}
-    @media (max-width:980px){
-      .hero{flex-direction:column}
-      .hero-media{width:100%}
-      .col-8,.col-4{grid-column:span 12}
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #0d1727; color: #fff; }
+    header { padding: 2rem 1rem; display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: auto; }
+
+    .logo-area { display: flex; align-items: center; gap: 1rem; }
+    .logo-area img { width: 70px; height: 70px; object-fit: cover; border-radius: 10px; }
+    .contact-info { font-size: 0.9rem; line-height: 1.4; }
+
+    .hero { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+    .hero h1 { font-size: 2rem; margin-bottom: 1rem; }
+    .hero-buttons { display: flex; gap: 1rem; margin-top: 1.5rem; }
+    .hero-buttons a { background: #2563eb; color: white; padding: 0.8rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: bold; }
+    .hero-buttons a.whatsapp { background: #25d366; }
+
+    .hero img { width: 100%; height: 280px; object-fit: cover; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+
+    nav { background: #0a1220; padding: 0.7rem; text-align: center; position: sticky; top: 0; z-index: 100; }
+    nav a { color: white; margin: 0 1rem; text-decoration: none; font-size: 1rem; }
+
+    .section { background: #fff; color: #000; border-radius: 12px; padding: 2rem; max-width: 1200px; margin: 2rem auto; }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+    .service-card { background: #f5f7fa; padding: 1.2rem; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+
+    footer { text-align: center; padding: 1.5rem 0; background: #0a1220; margin-top: 2rem; color: #aaa; }
+
+    .map { border-radius: 12px; width: 100%; height: 300px; }
+
+    .whatsapp-button { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.4); text-decoration: none; }
+
+    @media(max-width: 768px){ .hero { grid-template-columns: 1fr; } header { flex-direction: column; text-align: center; } }
   </style>
-  <link rel="preload" href="https://esgrportones.com.ar/fonts/Inter-Variable.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
 <body>
-  <header>
-    <div class="wrap" role="banner">
-      <div class="brand" aria-hidden="false">
-        <img src="https://esgrportones.com.ar/img/logo.png" alt="Logotipo ESGR Herrería y Portones" loading="lazy" />
-        <div>
-          <h1>ESGR • Automatización y Herrería Profesional</h1>
-          <div class="meta-contact" aria-hidden="false">
-            <div><small>Urgencias 24/7</small><div style="font-weight:800">11 3435 2754</div></div>
-            <div><small>Email</small><div style="font-weight:800">contacto@esgrportones.com.ar</div></div>
-          </div>
-        </div>
-      </div>
 
-      <div class="hero" role="region" aria-labelledby="hero-title">
-        <div class="hero-left">
-          <span class="badge">+20 años • Atención inmediata</span>
-          <h2 id="hero-title" class="hero-title">Automatización de portones, reparaciones urgentes y herrería a medida</h2>
-          <p class="hero-sub">Instalación, mantenimiento, soldadura y optimización de sistemas automáticos. Presupuestos sin cargo y garantía en todos los trabajos.</p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="tel:+541134352754" aria-label="Llamar a ESGR">
-              <i class="fa fa-phone"></i> Llamar ahora
-            </a>
-            <a class="btn btn-ghost" href="https://wa.me/541134352754" target="_blank" rel="noopener" aria-label="Chatear por WhatsApp">
-              <i class="fab fa-whatsapp"></i> WhatsApp
-            </a>
-          </div>
-          <div style="margin-top:12px" class="tags" aria-hidden="true">
-            <span class="tag">Automatización</span>
-            <span class="tag">Reparaciones 24/7</span>
-            <span class="tag">Soldadura</span>
-            <span class="tag">Presupuesto Inmediato</span>
-          </div>
-        </div>
-
-        <div class="hero-media" role="img" aria-label="Portón automatizado ESGR">
-          <img src="https://esgrportones.com.ar/img/hero-porton.jpg" alt="Portón automatizado instalado por ESGR" loading="lazy" />
-        </div>
-      </div>
+<header>
+  <div class="logo-area">
+    <img src="https://images.unsplash.com/photo-1581091215367-59ab6b68d8a6?w=300" alt="Logo ESGR">
+    <div class="contact-info">
+      <strong>ESGR • Automatización y Herrería Profesional</strong><br>
+      Urgencias 24/7: 11 3435 2754<br>
+      Email: contacto@esgrportones.com.ar
     </div>
+  </div>
+</header>
 
-    <nav aria-label="Navegación principal">
-      <div class="nav-inner wrap">
-        <a href="#servicios">Servicios</a>
-        <a href="#acerca">Nosotros</a>
-        <a href="#zona">Zonas</a>
-        <a href="#presupuesto">Pedir Presupuesto</a>
-        <a href="#contacto">Contacto</a>
-      </div>
-    </nav>
-  </header>
+<section class="hero">
+  <div>
+    <span style="background:#22c55e;padding:0.3rem 0.8rem;border-radius:8px;font-weight:bold;">+20 años • Atención inmediata</span>
+    <h1>Automatización de portones, reparaciones urgentes y herrería profesional</h1>
+    <p>Instalación, mantenimiento, soldadura y optimización de sistemas automáticos. Presupuestos sin cargo y garantía total.</p>
 
-  <main role="main">
-    <section class="wrap">
-      <div class="grid">
-        <div class="col-8">
-          <article class="card" id="servicios" aria-labelledby="servicios-title">
-            <h2 id="servicios-title">Servicios Profesionales</h2>
-            <p class="lead">Trabajos integrales: desde la instalación de motores modernos hasta la fabricación a medida y atención de emergencias.</p>
-
-            <div class="services" role="list">
-              <div class="service" role="listitem">
-                <i class="fa fa-gear" aria-hidden="true"></i>
-                <div><h3>Automatización completa</h3><p>Instalación de motores, controles, fotocélulas y mandos remotos para portones corredizos y levadizos.</p></div>
-              </div>
-
-              <div class="service" role="listitem">
-                <i class="fa fa-bolt" aria-hidden="true"></i>
-                <div><h3>Reparación urgente 24/7</h3><p>Intervenciones rápidas para que vuelvas a usar tu portón lo antes posible.</p></div>
-              </div>
-
-              <div class="service" role="listitem">
-                <i class="fa fa-wrench" aria-hidden="true"></i>
-                <div><h3>Mantenimiento preventivo</h3><p>Planes de mantenimiento que prolongan la vida útil y reducen fallas.</p></div>
-              </div>
-
-              <div class="service" role="listitem">
-                <i class="fa fa-fire" aria-hidden="true"></i>
-                <div><h3>Soldadura y refuerzos</h3><p>Soldaduras estructurales y estéticas en hierro, acero y aluminio.</p></div>
-              </div>
-
-              <div class="service" role="listitem">
-                <i class="fa fa-hammer" aria-hidden="true"></i>
-                <div><h3>Fabricación a medida</h3><p>Portones, rejas y estructuras diseñadas según tus necesidades.</p></div>
-              </div>
-
-              <div class="service" role="listitem">
-                <i class="fa fa-sync-alt" aria-hidden="true"></i>
-                <div><h3>Optimización y modernización</h3><p>Actualizar sistemas antiguos con tecnología eficiente y segura.</p></div>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" id="acerca" aria-labelledby="acerca-title">
-            <h2 id="acerca-title">¿Por qué elegirnos?</h2>
-            <p class="lead">Empresa familiar con más de 20 años de trayectoria, materiales de primera y técnicos certificados. Garantía escrita en todos los trabajos realizados.</p>
-            <ul style="margin-top:12px;color:var(--muted);padding-left:18px">
-              <li><strong>Velocidad:</strong> Atención rápida y llegada inmediata según la zona.</li>
-              <li><strong>Calidad:</strong> Materiales y repuestos originales o equivalentes certificados.</li>
-              <li><strong>Transparencia:</strong> Presupuestos detallados y sin sorpresas.</li>
-            </ul>
-          </article>
-
-          <article class="card" id="zona" aria-labelledby="zona-title">
-            <h2 id="zona-title">Zonas que cubrimos</h2>
-            <p class="lead">Atendemos Lugano y amplia cobertura en CABA y GBA. Consultar disponibilidad y tiempos aproximados de llegada según el punto.</p>
-            <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
-              <span class="tag">Lugano</span>
-              <span class="tag">Pompeya</span>
-              <span class="tag">Mataderos</span>
-              <span class="tag">Parque Patricios</span>
-              <span class="tag">Flores</span>
-              <span class="tag">Zona Sur GBA</span>
-            </div>
-          </article>
-
-          <article class="card" id="presupuesto" aria-labelledby="presupuesto-title">
-            <h2 id="presupuesto-title">Pedir presupuesto</h2>
-            <p class="lead">Completá el formulario o llamanos para recibir un presupuesto rápido y asesoramiento técnico.</p>
-
-            <div style="display:grid;grid-template-columns:1fr 320px;gap:14px;margin-top:12px">
-              <div>
-                <form action="https://esgrportones.com.ar/form-handler" method="post" aria-label="Formulario de presupuesto">
-                  <div class="form-row">
-                    <input type="text" name="nombre" placeholder="Nombre completo" required />
-                    <input type="tel" name="telefono" placeholder="Teléfono" required />
-                  </div>
-                  <div class="form-row">
-                    <input type="email" name="email" placeholder="Email (opcional)" />
-                    <input type="text" name="direccion" placeholder="Dirección/Localidad" />
-                  </div>
-                  <label class="small">Tipo de servicio</label>
-                  <select name="servicio" aria-label="Seleccionar servicio">
-                    <option value="automatizacion">Automatización</option>
-                    <option value="reparacion">Reparación urgente</option>
-                    <option value="mantenimiento">Mantenimiento</option>
-                    <option value="fabricacion">Fabricación a medida</option>
-                  </select>
-                  <label class="small">Descripción del trabajo (máx 500 caracteres)</label>
-                  <textarea name="mensaje" maxlength="500" placeholder="Contanos brevemente el problema o lo que necesitás"></textarea>
-                  <div style="display:flex;gap:10px;margin-top:6px;align-items:center">
-                    <button class="btn btn-primary" type="submit" aria-label="Enviar formulario">Enviar solicitud</button>
-                    <a class="btn btn-ghost" href="tel:+541134352754"><i class="fa fa-phone"></i> Llamar</a>
-                  </div>
-                </form>
-              </div>
-
-              <aside class="card contact-card">
-                <div>
-                  <h3 style="margin:0 0 8px">Contacto rápido</h3>
-                  <div class="contact-row"><i class="fa fa-phone"></i><div><div style="font-weight:800">11 3435 2754</div><div class="small">Llamadas y WhatsApp</div></div></div>
-                  <div class="contact-row"><i class="fa fa-envelope"></i><div><div style="font-weight:700">contacto@esgrportones.com.ar</div><div class="small">Consultas y presupuestos</div></div></div>
-                </div>
-                <div>
-                  <h3 style="margin:6px 0 8px">Horario de atención</h3>
-                  <div class="small">Atención y urgencias: <strong>24 horas, todos los días</strong></div>
-                </div>
-                <div>
-                  <h3 style="margin:6px 0 8px">Formas de pago</h3>
-                  <div class="small">Efectivo, transferencia, MercadoPago y tarjetas (según el trabajo).</div>
-                </div>
-              </aside>
-            </div>
-          </article>
-        </div>
-
-        <aside class="col-4">
-          <div class="card">
-            <h2>Ubicación</h2>
-            <p class="small">Lugano, Ciudad Autónoma de Buenos Aires. Servicio en CABA y GBA.</p>
-            <div class="map" aria-hidden="false">
-              <iframe title="Mapa ESGR" loading="lazy" width="100%" height="100%" style="border:0" referrerpolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.1234567890123!2d-58.484000!3d-34.679000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccabcdef12345%3A0xabcdef1234567890!2sLugano%2C%20CABA!5e0!3m2!1ses!2sar!4v0000000000000"
-                allowfullscreen>
-              </iframe>
-            </div>
-            <div style="margin-top:12px">
-              <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=-34.679,-58.484" target="_blank" rel="noopener">Ver en Google Maps</a>
-            </div>
-          </div>
-
-          <div class="card">
-            <h2>Testimonios</h2>
-            <blockquote style="margin:0;color:var(--muted)">"Servicio rápido y profesional. Nos solucionaron el portón en menos de una hora." — <strong>María R.</strong></blockquote>
-            <div style="margin-top:10px" class="small">¿Querés dejar tu opinión? <a href="https://g.page/r/CUSTOM_REVIEW_LINK" target="_blank" rel="noopener">Dejar reseña</a></div>
-          </div>
-
-          <div class="card">
-            <h2>Preguntas frecuentes</h2>
-            <details>
-              <summary style="font-weight:700">¿Cuánto demora una reparación?</summary>
-              <p class="small" style="margin-top:8px">Depende de la falla y repuestos. En emergencias priorizamos la solución temporal para habilitar el portón y luego realizamos la reparación definitiva.</p>
-            </details>
-            <details>
-              <summary style="font-weight:700">¿Dan garantía?</summary>
-              <p class="small" style="margin-top:8px">Sí. Todos los trabajos tienen garantía escrita según el servicio realizado.</p>
-            </details>
-          </div>
-        </aside>
-      </div>
-    </section>
-  </main>
-
-  <a class="whatsapp-button" href="https://wa.me/541134352754" target="_blank" rel="noopener" aria-label="WhatsApp ESGR">
-    <i class="fab fa-whatsapp" aria-hidden="true"></i>
-  </a>
-
-  <footer role="contentinfo">
-    <div class="wrap">
-      <div style="display:flex;flex-direction:column;gap:8px;align-items:center">
-        <div style="font-weight:800;font-size:15px">ESGR • Herrería y Automatización de Portones</div>
-        <div class="legal">© 2025 ESGR. Av. Lugano — Todos los derechos reservados.</div>
-        <div class="small" style="margin-top:6px">Tel: 11 3435 2754 • Email: contacto@esgrportones.com.ar</div>
-      </div>
+    <div class="hero-buttons">
+      <a href="tel:1134352754">Llamar ahora</a>
+      <a class="whatsapp" href="https://wa.me/541134352754" target="_blank">WhatsApp</a>
     </div>
-  </footer>
+  </div>
 
-  <script>
-    // Simple front-end enhancements (no tracking)
-    (function(){
-      // Basic form client-side validation enhancement
-      const form = document.querySelector('form[action="https://esgrportones.com.ar/form-handler"]');
-      if(form){
-        form.addEventListener('submit', function(e){
-          const nombre = form.querySelector('[name="nombre"]');
-          const telefono = form.querySelector('[name="telefono"]');
-          if(!nombre.value.trim() || !telefono.value.trim()){
-            e.preventDefault();
-            alert('Por favor completá tu nombre y teléfono para que podamos contactarte.');
-            nombre.focus();
-          }
-        });
-      }
-      // Accessibility: focus visible outline
-      document.documentElement.style.setProperty('--focus-outline', '3px solid rgba(31,111,235,0.25)');
-      document.addEventListener('keydown', function(e){
-        if(e.key === 'Tab') document.body.classList.add('show-focus');
-      });
-    })();
-  </script>
+  <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900" alt="Portón automatizado por ESGR">
+</section>
 
-  <noscript>
-    <style>
-      .hero-media img{filter:blur(1px)}
-    </style>
-    <div style="background:#fff3; padding:12px; text-align:center">Para una mejor experiencia activa JavaScript en tu navegador.</div>
-  </noscript>
+<nav>
+  <a href="#servicios">Servicios</a>
+  <a href="#ubicacion">Ubicación</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="servicios" class="section">
+  <h2>Servicios Profesionales</h2>
+  <div class="services-grid">
+    <div class="service-card"><strong>Automatización completa</strong><br> Instalación de motores, controles y sistemas corredizos y levadizos.</div>
+    <div class="service-card"><strong>Reparación urgente 24/7</strong><br> Soluciones inmediatas para portones trabados o dañados.</div>
+    <div class="service-card"><strong>Mantenimiento preventivo</strong><br> Evita roturas y prolonga la vida del sistema.</div>
+    <div class="service-card"><strong>Soldadura y refuerzos</strong><br> Trabajos estructurales y reparaciones metálicas.</div>
+    <div class="service-card"><strong>Fabricación a medida</strong><br> Portones, rejas y estructuras personalizadas.</div>
+    <div class="service-card"><strong>Modernización</strong><br> Actualización de sistemas antiguos por tecnología moderna.</div>
+  </div>
+</section>
+
+<section id="ubicacion" class="section">
+  <h2>Ubicación</h2>
+  <p>Lugano, Ciudad Autónoma de Buenos Aires. Servicio en CABA y GBA.</p>
+  <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.883597480573!2d-58.486!3d-34.679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb0d28943e6f%3A0xdea2b497bb7d1cf!2sVilla%20Lugano!5e0!3m2!1ses-419!2sar!4v1668027770000!5m2!1ses-419!2sar"></iframe>
+</section>
+
+<section id="contacto" class="section">
+  <h2>Contacto</h2>
+  <p><strong>Teléfono:</strong> 11 3435 2754 / 11 2471 1043</p>
+  <p><strong>Email:</strong> contacto@esgrportones.com.ar</p>
+  <p><strong>Horario:</strong> Atención 24 horas, todos los días</p>
+</section>
+
+<footer>
+  © 2025 ESGR - Todos los derechos reservados
+</footer>
+
+<a class="whatsapp-button" href="https://wa.me/541134352754" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
 </body>
 </html>
-```
